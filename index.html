@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Basma Gouiaa</title>
+  <meta name="title" content="Basma Gouiaa">
+  <meta name="description" content="Etudiante">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="/Images/favicon.ico" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="/Accueil/AcceilStyles.css">
+
+  <!-- 
+    - preload /Images
+  -->
+  <link rel="preload" as="image" href="/Images/ImageHero.jpg">
+  <link rel="preload" as="image" href="/Images/Blog.svg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#Accueil" id="logo">
+        <a href="#Accueil"> Basma Gouiaa</a>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#Accueil" class="navbar-link">Accueil</a>
+          </li>
+
+          <li>
+            <a href="#COMPÉTENCES" class="navbar-link">Compétences</a>
+          </li>
+
+          <li>
+            <a href="#Projets" class="navbar-link">Projets</a>
+          </li>
+
+          <li>
+            <a href="#Contact" class="navbar-link">Contact</a>
+          </li>
+
+          <li>
+            <a href="/Quiz/index.html" class="navbar-link">Quizz</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">gouiaa.basmaa@gmail.com </a>
+
+          <a href="tel:001234567890" class="contact-link"> +216 52 212 529
+          </a>
+        </div>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/Bassouma.G" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/basmagouiaa/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #Accueil
+      -->
+
+      <section class="section hero" aria-label="Accueil" id="Accueil">
+        <div class="container">
+
+          <figure class="hero-banner">
+            <img src="/Images/IamgeHero1.jpg" width="560" height="540" alt="bassma" class="w-100" data-reveal="top">
+
+          </figure>
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
+              BASMA GOUIAA
+            </h1>
+
+            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+              Une personne travailleuse, rigoureuse et
+              ambitieuse avec une grande passion
+              pour la programmation et la résolution de
+              problèmes
+            </p>
+
+            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+              <a href="#Projets" class="btn btn-primary">Voir mes Projets</a>
+
+              <a href="#Contact" class="btn btn-secondary">Contactez moi</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #COMPÉTENCES
+      -->
+
+      <section class="section about" aria-label="COMPÉTENCES" id="COMPÉTENCES">
+        <div class="container">
+
+          <div class="wrapper">
+
+            <div data-reveal="left">
+              <h2 class="h2 section-title">COMPÉTENCES </h2>
+
+              <p class="section-text">
+
+                Je suis spécialisé dans le développement web avec une expertise étendue en HTML, CSS, JS, PHP, ainsi que
+                dans des frameworks tels que CakePHP, Angular et Springboot. Ma polyvalence en programmation s'étend à
+                des langages comme C++, Python, Java et Matlab. Je suis également compétent dans le développement
+                mobile, en particulier avec Flutter. En plus, je maîtrise les systèmes d'exploitation tels que Windows
+                et Linux.
+              </p>
+            </div>
+
+            <ul class="progress-list" data-reveal="right">
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Développement web</p>
+
+                  <span class="span">80 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 100%; background-color: #c7b1dd"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Développement Mobile</p>
+
+                  <span class="span">70 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 80%; background-color: #8caeec"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Programmation</p>
+
+                  <span class="span">75 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 85%; background-color: #b0d4c1"></div>
+                </div>
+
+              </li>
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Système d'exploitation</p>
+
+                  <span class="span">90 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 90%; background-color: #e3a6b6"></div>
+                </div>
+
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li data-reveal="bottom">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="/Images/icon-1.svg" width="52" height="52" loading="lazy" alt="Développement web">
+                </div>
+
+                <h3 class="h4 card-title">Développement web</h3>
+
+                <p class="card-text">
+                  Html , CSS , JS , PHP , Frame Work cake PHP
+                  Angular , Springboot , SQL , Wordpress
+                </p>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.25s">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="/Images/icon-2.svg" width="52" height="52" loading="lazy" alt="Développement Mobile">
+                </div>
+
+                <h3 class="h4 card-title">Développement Mobile</h3>
+
+                <p class="card-text">
+                  Flutter
+                </p>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.5s">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="/Images/icon-3.svg" width="52" height="52" loading="lazy" alt="Programmation icon">
+                </div>
+
+                <h3 class="h4 card-title">Programmation</h3>
+
+                <p class="card-text">
+                  C++ , Python , java , Matlab
+                </p>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.5s">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="/Images/icon-1.svg" width="52" height="52" loading="lazy" alt="Système d'exploitation icon">
+                </div>
+
+                <h3 class="h4 card-title">Système d'exploitation</h3>
+
+                <p class="card-text">
+                  Windows , Linux
+                </p>
+
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section project" aria-labelledby="project-label" id="Projets">
+        <div class="container">
+
+          <div class="title-wrapper" data-reveal="top">
+
+            <div>
+              <h2 class="h2 section-title" id="project-label">Projets</h2>
+
+
+            </div>
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #a07cc5">Application Web </p>
+
+                  <h3 class="h3 card-title"> APPLICATION WEB DU BOUTIQUE DE JOUETS </h3>
+
+                  <p class="card-text">
+                    Application web centralisée de gestion des articles de la boutique pour améliorer ses services,
+                    augmenter la gestion des informations des articles et faciliter leurs tâches administratives
+                  </p>
+
+                  <a class="btn-text" style="color: #a07cc5">
+                    <span class="span" id="PDFWeb" >Voir le projet</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="/Images/Web.png" width="650" height="370" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-2" style="background-color: #f1f5fd">
+
+                <div class="card-content" data-reveal="right">
+
+                  <p class=" card-tag" style="color: #3f78e0">Application Mobile</p>
+
+                  <h3 class="h3 card-title">Gestion des réservations dans un hôtel</h3>
+
+                  <p class="card-text">
+                    Le but de cette application d organiser la réservation dans un hôtel et de stocker les données de
+                    clients
+                  </p>
+
+                  <a class="btn-text" style="color: #3f78e0">
+                    <span class="span" id="PDFMobile" >Voir le projet</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="left">
+                  <img src="/Images/Mobile.png" width="600" height="367" loading="lazy" alt="Web Design" class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" aria-label="contact" id="Contact">
+        <div class="container">
+
+          <div class="contact-card">
+
+            <div class="contact-content" data-reveal="left">
+
+              <div class="card-icon">
+                <img src="/Images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
+              </div>
+
+              <h2 class="h2 section-title">Si vous aimez ce que vous voyez, travaillons ensemble.</h2>
+
+              <p class="section-text">
+                Avez-vous des questions? Contactez-moi depuis
+                ce formulaire de contact et je vous répondrai sous peu.
+              </p>
+
+            </div>
+
+            <form action="" class="contact-form" data-reveal="right">
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Nom *" required class="input-field">
+
+                <input type="email" name="email_address" placeholder="Email *" required class="input-field">
+              </div>
+
+              <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">Envoyer le message</button>
+
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+
+      <p class="copyright">
+        © 2024 All rights reserved.
+      </p>
+      <ul class="social-list">
+
+        <li>
+          <a href="https://www.facebook.com/Bassouma.G" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/basmagouiaa/" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+
+
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="/Accueil/script1.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
