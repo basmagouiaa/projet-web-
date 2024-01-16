@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Quiz</title>
+</head>
+<body>
+    
+    <div class="project-card project-card-1" style="background-color: #f8f5fb" id="quiz-container">
+        
+    </div>
+    <div class="center-container">
+    <button class="button" style="vertical-align:middle" onclick="calculateScore()"  id="button" ><span> Voir le Score </span></button>
+</div>
+
+
+    <div class="project-card project-card-1" style="background-color: #f8f5fb ; display:none;"  id="result-container">
+    </div>
+    <div class="center-container">
+    <button class="button" style="vertical-align:middle;display:none;" onclick="end()"  id="button2"><span> Fin </span></button>
+</div>
+   
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

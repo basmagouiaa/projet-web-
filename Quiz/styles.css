@@ -1,0 +1,182 @@
+
+:root {
+ 
+
+  --white: hsla(0, 0%, 100%, 1);
+  --white_a8: hsla(0, 0%, 100%, 0.08);
+  --white_a12: hsla(0, 0%, 100%, 0.12);
+  --cultured: hsla(220, 20%, 97%, 1);
+  --snow: hsla(345, 57%, 97%, 1);
+  --manatee: hsla(219, 10%, 62%, 1);
+  --black-coral: hsla(220, 12%, 43%, 1);
+  --cadet-blue-crayola_a20: hsla(222, 23%, 71%, 0.2);
+  --cinnamon-satin: hsla(344, 53%, 62%, 1);
+  --raisin-black: hsla(216, 14%, 14%, 1);
+  --raisin-black_a6: hsla(216, 14%, 14%, 0.06);
+  --gunmetal: hsla(214, 15%, 21%, 1);
+  --charcoal: hsla(219, 22%, 26%, 1);
+  --fs-1: calc(1.7rem + 0.38vw);
+  --fs-2: calc(2.6rem + .66vw);
+  --fs-3: calc(2.6rem + .24vw);
+  --fs-4: 1.9rem;
+  --fs-5: 1.2rem;
+  --fs-6: 1.7rem;
+  --fs-7: 1.5rem;
+  --fs-8: 1.4rem;
+  
+  --fw-700: 700;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+#quiz-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.project { border-block: 1px solid var(--cadet-blue-crayola_a20); }
+
+.project .title-wrapper { margin-block-end: 40px; }
+
+.project .btn { margin-block-start: 24px; }
+
+.project .grid-list { gap: 40px; }
+
+.project-card {
+  --padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding);
+  border-radius: var(--radius-8);
+  overflow: hidden;
+}
+
+.project-card-1,
+.project-card-2,
+:is(.project-card-3, .project-card-4) .card-content { padding: var(--padding); }
+
+.project-card-1 { padding-block-end: 0; }
+
+.project :is(.project-card-3, .project-card-4) { gap: 0; }
+
+.project-card .card-tag {
+  font-size: var(--fs-8);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+}
+
+.project-card .card-title { margin-block: 16px; }
+
+.project-card .card-text { margin-block-end: 20px; }
+
+.project-card .btn-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: var(--fw-700);
+  transition: var(--transition-1);
+}
+
+.project-card .btn-text:is(:hover, :focus-visible) { gap: 10px; }
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: var(--cinnamon-satin);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.h1 { font-size: var(--fs-1); }
+.section-text { font-size: var(--fs-5); }
+  
+.section-title { margin-block-end: 16px; }
+/* Styles pour le conteneur global de résultat */
+.question-result {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styles pour le titre de la question */
+.question-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Styles pour la réponse de l'utilisateur */
+.user-answer {
+  margin-bottom: 5px;
+}
+
+/* Styles pour la réponse correcte */
+.correct-answer {
+  font-weight: bold;
+  color: green;
+}
+
+/* Styles pour la couleur de fond en cas de réponse correcte */
+.correct-answer-bg {
+  background-color: #d4edda; /* Une couleur verte claire pour la fond en cas de réponse correcte */
+}
+
+/* Styles pour la couleur de fond en cas de réponse incorrecte */
+.wrong-answer-bg {
+  background-color: #f8d7da; /* Une couleur rouge claire pour la fond en cas de réponse incorrecte */
+}
